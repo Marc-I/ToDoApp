@@ -16,9 +16,9 @@ gulp.task('styles', function () {
             cascade: false
         }))
         .pipe(cleancss({debug: true}, function(details) {
-            console.log(details.name + ' (org): ' + details.stats.originalSize);
+            //console.log(details.name + ' (org): ' + details.stats.originalSize);
         }))
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('./styles/'));
 
 });
 
@@ -29,5 +29,6 @@ gulp.task('default', function () {
         },
     });
 
-    gulp.watch('scss/*.scss', ['styles']);
+    gulp.watch('scss/**/*.scss', ['styles']);
+    gulp.watch(['*.html', 'scss/**/*.scss']).on('change', browsersync.reload);
 });

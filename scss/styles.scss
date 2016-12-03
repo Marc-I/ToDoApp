@@ -1,4 +1,9 @@
 
+@import "../node_modules/normalize.css/normalize";
+
 @import "partials/colors";
 @import "partials/body";
 @import "partials/container";
+@import "partials/form";
+
+@import "partials/todolist";

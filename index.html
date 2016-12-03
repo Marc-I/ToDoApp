@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Marc Iten's ToDoApp</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
 <div id="container">
     <header>
-        <h1>Marc Itens ToDoApp</h1>
+        <h1>Marc Iten's ToDoApp</h1>
     </header>
 
     <nav>
@@ -20,12 +20,22 @@
 
     <main>
 
-        <form action="#" method="post">
-            <input type="text" name="title">
+        <h2>add new item</h2>
+        <form action="#" method="post" id="todo">
+            <input type="text" name="title" placeholder="Text">
             <input type="date" name="date">
-            <input type="submit" value="add new item">
+            <button type="submit">add new item</button>
         </form>
 
+        <ul class="todos">
+            <li><input type="checkbox"> Text <div class="item-date">zu Erledigen bis: 20:00</div></li>
+            <li><input type="checkbox"> etwas längerer Text <div class="item-date">zu Erledigen bis: 20:00</div></li>
+            <li class="done"><input type="checkbox" checked="checked"> . <div class="item-date">zu Erledigen bis: 20:00</div></li>
+            <li><input type="checkbox"> noch mehr Text <div class="item-date">zu Erledigen bis: 20:00</div></li>
+            <li><input type="checkbox"> ein sehr langer Text, zum sehen ob es einen Umbruch gibt oder nicht. Zumindest im responsiven Design. <div class="item-date">zu Erledigen bis: 20:00</div></li>
+            <li class="done"><input type="checkbox" checked="checked"> . <div class="item-date">zu Erledigen bis: 20:00</div></li>
+            <li><input type="checkbox"> . <div class="item-date">zu Erledigen bis: 20:00</div></li>
+        </ul>
     </main>
 
     <aside>

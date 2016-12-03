@@ -1,0 +1,39 @@
+@import "colors";
+@import "functions";
+
+ul.todos {
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 8px 0;
+    padding: 12px;
+    background-color: $threadless-box;
+    //color: $threadless-melo;
+
+    &.done {
+      position: relative;
+      background-color: lighten($threadless-box, 3%);
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 49%;
+        left: 6px;
+        right: 6px;
+        bottom: 49%;
+        //border-top: 3px solid $threadless-melo;
+        background-color: $threadless-melo;
+      }
+    }
+
+    input {
+      margin-right: 8px;
+    }
+
+    .item-date {
+      float: right;
+    }
+  }
+}

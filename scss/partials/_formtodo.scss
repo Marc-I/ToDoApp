@@ -1,0 +1,31 @@
+
+form#todo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  input, button {
+    flex-basis: 32%;
+    margin: 4px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  form#todo {
+    input, button {
+      flex-basis: 100%;
+    }
+
+    *:nth-child(n+2) {
+      flex-basis: 49%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  form#todo {
+    *:nth-child(n+2) {
+      flex-basis: 100%;
+    }
+  }
+}

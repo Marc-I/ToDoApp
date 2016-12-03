@@ -1,0 +1,14 @@
+
+input {
+  &[type=text],
+  &[type=date]{
+    height: 40px;
+  }
+}
+
+button {
+  height: 40px;
+  line-height: 5px;
+}
+
+@import "formtodo";
